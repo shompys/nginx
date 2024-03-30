@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  proxy:
+    container_name: "nginx-proxy"
+    build:
+      context: .
+
+    ports:
+      - 443:443
+      - 80:80
