@@ -1,0 +1,14 @@
+version: "3.3"
+services:
+  app:
+    container_name: "nginx"
+    build:
+      context: .
+      # tags:
+      #   - "nginx:0.0.1"
+    ports:
+      - 443:443
+      - 80:80
+      - 8080:8080
+        # docker build -t nginx:0.0.1 .
+        # docker exec -it mi_contenedor /bin/bash
